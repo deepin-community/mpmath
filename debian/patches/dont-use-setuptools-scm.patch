@@ -1,0 +1,18 @@
+--- a/setup.py
++++ b/setup.py
+@@ -3,4 +3,4 @@
+ import setuptools
+ 
+ 
+-setuptools.setup(use_scm_version=True)
++setuptools.setup()
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -27,7 +27,6 @@ project_urls = Source = https://github.c
+ [options]
+ packages = find:
+ setup_requires = setuptools>=36.7.0
+-                 setuptools_scm>=1.7.0
+ tests_require = mpmath[tests]
+ [options.extras_require]
+ tests = pytest >= 4.6
